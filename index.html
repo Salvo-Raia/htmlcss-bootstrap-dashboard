@@ -43,15 +43,20 @@
     
     <main>
         <div class="container">
-<div class="row mt-3">
-    <div class="col-6">
-      <h2 class="fs-4">Catalogo Libri</h2>
-    </div>
-    <div class="col-6">
-      <button class="fs-6 btn btn-primary">Aggiungi Libro</button>
-    </div>
-</div>
+
+           <!-- Mini-griglia per catalogue header -->
+           <div class="row mt-3">
+                <div class="col-6">
+                  <h2 class="fs-4">Catalogo Libri</h2>
+                </div>
+                <div class="col-6">
+                  <button class="fs-6 btn btn-primary">Aggiungi Libro</button>
+                </div>
+            </div>
+
+            <!-- Griglia catalogo -->
             <div class="row">
+                <!-- Colonna catalogo -->
                 <div class="col">
                     <table class="table table-striped">
                         <thead>
@@ -79,15 +84,60 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- Colonna form e Accordion-->
+                <div class="col-12">
+                    <!-- Qui inserisco la card del form-->
 
-                <div class="bg-info">
-Hey
+                    <!-- Qui inserisco la card Accordion -->
+                     <div class="card">
+                        <div class="card-header">
+                            F.A.Q.
+                        </div>
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Come aggiungere un nuovo libro?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Come posso accedere all'anagrafica utenti?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Posso usare questa dashboard da mobile?
+                                </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+
+
                 </div>
             </div>
+                <!-- Fine griglia -->
+
+
 
         </div>
     </main>
-
+<!-- Bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
