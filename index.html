@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./img/duck.png" type="image/png">
     <title>Catalogo Libri</title>
 </head>
 
 <body>
 
     <header>
- <nav class="navbar navbar-expand-lg bg-dark">
+ <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid ">
-    <div class="logo-container">
-    <a class="navbar-brand text-light" href="#">
-        <img src="./img/duck.png" style="width: 60px;">
+    <a class="navbar-brand" href="#">
+        <img src="./img/duck.png" alt="logo biblioteca" style="height: 60px;">
     </a>
-    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-light"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Catalogo Libri</a>
+          <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Anagrafica Utenti</a>
+          <a class="nav-link" href="#">Anagrafica Utenti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Storico Prestiti</a>
+          <a class="nav-link" href="#">Storico Prestiti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Help</a>
+          <a class="nav-link" href="#">Help</a>
         </li>
       </ul>
-      <form class="d-flex " role="search">
-        <input class="form-control me-2 " type="Cerca" placeholder="Cerca..." aria-label="Cerca..."/>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="search">
         <button class="btn btn-outline-light" type="submit">Cerca...</button>
       </form>
     </div>
@@ -55,9 +54,9 @@
                 
                 <div class="col-lg-9 mb-1">
                     <!-- mini-griglia per header catalogo-->
-                    <header class="row">
+                    <header class="row mb-4">
                         <div class="col-6">
-                            <h2 class="fs-4">Catalogo Libri</h2>
+                            <h2 class="fs-2 m-0">Catalogo Libri</h2>
                         </div>
                         <div class="col-6 text-end">
                             <button class="fs-6 btn btn-primary">Aggiungi Libro</button>
@@ -75,17 +74,97 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Nome libro</td>
-                                <td class="d-none d-md-table-cell">18 Aprile 2025</td>
+                                <td>It</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge text-bg-success">Disponibile</span></td>
                                 <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
                                     <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
                                 </td>
                             </tr>
                              <tr>
-                                <td>Nome libro</td>
-                                <td class="d-none d-md-table-cell">18 Aprile 2025</td>
+                                <td>Guida galattica per autostoppisti</td>
+                                <td class="d-none d-md-table-cell">-</td>
                                 <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il piccolo principe</td>
+                                <td class="d-none d-md-table-cell">18 Ottobre 2025</td>
+                                <td><span class="badge bg-warning text-white">In prestito</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Shining</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il codice Da Vinci</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>The Medium is the message</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>La Divina Commedia</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1984</td>
+                                <td class="d-none d-md-table-cell">4 Novembre 2025</td>
+                                <td><span class="badge bg-warning text-light">In prestito</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Il Signore degli Anelli</td>
+                                <td class="d-none d-md-table-cell">7 Agosto 2025</td>
+                                <td><span class="badge bg-warning text-white">In prestito</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Departure</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Initiation</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                                    <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Return</td>
+                                <td class="d-none d-md-table-cell">-</td>
+                                <td><span class="badge text-bg-success">Disponibile</span></td>
                                 <td class="text-center"><button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
                                     <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
                                 </td>
@@ -102,9 +181,9 @@
                     </div>
                       <div class="card m-4">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><input type="checkbox" id="todo1" name="todo1"><label class="ps-2" for="todo1">Chiamare la segreteria</label></li>
-                            <li class="list-group-item"><input type="checkbox" id="todo2" name="todo2"><label class="ps-2" for="todo2">Inviare avvisi perstiti scaduti</label></li>
-                            <li class="list-group-item"><input type="checkbox" id="todo3" name="todo3"><label class="ps-2" for="todo3">Ordinare nuovi libri</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo1" name="todo1"><label class="ps-2" for="todo1">Chiamare la segreteria</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo2" name="todo2"><label class="ps-2" for="todo2">Inviare avvisi perstiti scaduti</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo3" name="todo3"><label class="ps-2" for="todo3">Ordinare nuovi libri</label></li>
                         </ul>
                     </div>
                 </div>
@@ -120,8 +199,8 @@
                                     Come aggiungere un nuovo libro?
                                 </button>
                                 </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">Puoi farlo selezionando il libro che desideri dal nostro catalogo e cliccnaod "Aggiungi libro".</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -131,7 +210,7 @@
                                 </button>
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
+                                <div class="accordion-body">Dal menù di navigazione in cima alla pagina, alla voce "Anagrafica Utenti".</div>
                                 </div>
                             </div>
                             <div class="accordion-item">
@@ -141,7 +220,7 @@
                                 </button>
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                <div class="accordion-body">Certamente! La nostra web-app funziona su tutti i dispositivi.</div>
                                 </div>
                             </div>
                           </div>
