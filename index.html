@@ -15,7 +15,7 @@
   <div class="container-fluid ">
     <a class="navbar-brand text-light" href="#">LOGO PAPERELLA</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-danger"></span>
+      <span class="navbar-toggler-icon bg-light"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -29,7 +29,7 @@
           <a class="nav-link text-light" href="#">Storico Prestiti</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">Help</a>
+          <a class="nav-link text-light" aria-disabled="true">Help</a>
         </li>
       </ul>
       <form class="d-flex " role="search">
@@ -63,6 +63,7 @@
                             <tr>
                                 <th>Titolo</th>
                                 <th>Stato</th>
+                                <th class="d-none d-md-table-cell">Data prestito</th>
                                 <th>Azioni</th>
                             </tr>
                         </thead>
@@ -70,6 +71,7 @@
                             <tr>
                                 <td>Nome libro</td>
                                 <td><span class="badge text-bg-success">Disponibile</span></td>
+                                <td class="d-none d-md-table-cell">18 Aprile 2025</td>
                                 <td><button class="btn btn-outline-secondary">S</button>
                                     <button class="btn btn-outline-secondary">D</button>
                                 </td>
@@ -77,6 +79,7 @@
                              <tr>
                                 <td>Nome libro</td>
                                 <td><span class="badge text-bg-danger">Non disponibile</span></td>
+                                <td class="d-none d-md-table-cell">18 Aprile 2025</td>
                                 <td><button class="btn btn-outline-secondary">S</button>
                                     <button class="btn btn-outline-secondary">D</button>
                                 </td>
@@ -85,15 +88,26 @@
                     </table>
                 </div>
                 <!-- Colonna form e Accordion-->
-                <div class="col-12">
+                <div>
                     <!-- Qui inserisco la card del form-->
-
-                    <!-- Qui inserisco la card Accordion -->
-                     <div class="card">
-                        <div class="card-header">
-                            F.A.Q.
+                     <div class="card my-4">
+                       <div class="card-header ps-4">
+                         <h3 class="my-1">To do list</h3>
+                    </div>
+                      <div class="card m-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><input type="checkbox" id="todo1" name="todo1"><label class="ps-2" for="todo1">Chiamare la segreteria</label></li>
+                            <li class="list-group-item"><input type="checkbox" id="todo2" name="todo2"><label class="ps-2" for="todo2">Inviare avvisi perstiti scaduti</label></li>
+                            <li class="list-group-item"><input type="checkbox" id="todo3" name="todo3"><label class="ps-2" for="todo3">Ordinare nuovi libri</label></li>
+                        </ul>
+                    </div>
+                </div>
+                    <!-- Card Accordion -->
+                     <div class="card my-4">
+                        <div class="card-header ps-4">
+                           <h3 class="my-1">F.A.Q.</h3>
                         </div>
-                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion accordion-flush m-4" id="accordionFlushExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
