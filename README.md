@@ -2,7 +2,7 @@
 
 Nome repo: `html-css-bootstrap-dashboard`
 
-### Consegna 1
+## Consegna 1
 Ricreiamo il layout responsive di una dashboard, ovvero il pannello di controllo di una ipotetica applicazione web, seguendo gli screenshot allegati.
 La richiesta è realizzarlo utilizzando Bootstrap 5.
 Teniamo sempre sotto mano la documentazione della libreria per usare le caratteristiche principali nel modo corretto.
@@ -13,7 +13,7 @@ Ricordiamo che Bootstrap ha già molti componenti pronti all’uso che potete ut
 Ogni volta che volete usare un componente di Bootstrap fate sempre una prova su un altro file, copiate il codice di esempio dalla documentazione, osservate il comportamento, e solo quando siete sicuri che tutto funzioni come volete, integratelo nel vostro layout.
 Così facendo il codice CSS custom che scriverete risulterà abbastanza ridotto.
 
-### Consegna 2
+## Consegna 2
 Aggiungiamo una nuova pagina alla dashboard seguendo gli screenshot allegati.
 La richiesta è realizzarlo utilizzando il form e i campi html con Bootstrap 5.
 Teniamo sempre sotto mano la documentazione della libreria per usare le caratteristiche principali nel modo corretto. Potrebbero tornarci utili anche componenti, classi helper, utilities etc.
