@@ -8,7 +8,7 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="icon" href="./img/duck.png" type="image/png">
-    <title>Catalogo Libri</title>
+    <title>Aggiungi un nuovo libro</title>
 </head>
 
 <body>
@@ -49,28 +49,29 @@
     <main>
         <form class="container">
             
-            <h2>Nuovo libro</h2>
-            <div class="row row-cols-2">
+            <h1 class="fs-2 mt-4">Nuovo libro</h1>
+            <div class="row row-cols-2 my-4">
                 <div>
-                <label for="author-first-name">Nome Autore:</label>
-                <input class="input-group" type="text" id="author-first-name" name="author-first-name" placeholder="Inserisci nome">
+                <label class="form-label fw-semibold" for="author-first-name">Nome Autore</label>
+                <input class="form-control" type="text" id="author-first-name" name="author-first-name" placeholder="Inserisci nome">
                 </div>
                 <div>
-                <label for="author-last-name">Cognome Autore:</label>
-                <input class="input-group" type="text" id="author-last-name" name="author-last-name" placeholder="Inserisci cognome">
+                <label class="form-label fw-semibold" for="author-last-name">Cognome Autore</label>
+                <input class="form-control" type="text" id="author-last-name" name="author-last-name" placeholder="Inserisci cognome">
                 </div>
             </div>
 
-            <div class="d-block">
-                <label>Titolo dell'opera</label>
-                <input class="input-group" type="text" id="book-title" name="book-title" placeholder="Inserisci titolo">
+            <div class="d-block mb-4">
+                <label class="form-label fw-semibold" for="book-title">Titolo dell'opera</label>
+                <input class="form-control" type="text" id="book-title" name="book-title" placeholder="Inserisci titolo">
+                <span class="form-text">Titolo verisone italiana</span>
             </div>
 
-            <div class="row">
+            <div class="row mb-4 g-4">
                 <div class="col-md-4"> 
-                    <label for="book-genre">Genere:</label>
-                    <select class="input-group">
-                        <option selected>Scegli il genere</option>
+                    <label class="form-label fw-semibold" for="book-genre">Genere</label>
+                    <select class="form-select fw-semibold">
+                        <option class="fw-semibold" selected>Scegli genere</option>
                         <option value="Avventura">Avventura</option>
                         <option value="Horror">Horror</option>
                         <option value="Romanzo storico">Romanzo storico</option>
@@ -79,20 +80,20 @@
                     </select>
                 </div>
                 <div class="col-md-4">
-                    <label for="book-release-year">Anno di pubblicazione:</label>
-                    <input class="input-group" type="number" id="book-release-year" name="book-release-year" placeholder="Inserisci anno">
+                    <label class="form-label fw-semibold" for="book-release-year">Anno di pubblicazione</label>
+                    <input class="form-control" type="number" id="book-release-year" name="book-release-year" placeholder="Inserisci anno">
                 </div>
                 <div class="col-md-4">
-                    <label for="book-isbn">#ISBN:</label>
-                    <input class="input-group" type="text" id="book-isbn" name="book-isbn" placeholder="Inserisci codice">
+                    <label class="form-label fw-semibold" for="book-isbn">#ISBN</label>
+                    <input class="form-control" type="text" id="book-isbn" name="book-isbn" placeholder="Inserisci codice">
                 </div>
             </div>
             <hr>
             <div>
-                <label for="book-notes">Note</label><br>
-                <textarea class="input-group" id="book-notes" name="book-notes" name="message" placeholder="Inserisci qui eventuali altre note sulla pubblicazione"></textarea><br>
-                <input class=".form-check-input" type="checkbox" id="digital-version-availability" name="digital-version-availability">
-                <label for="digital-version-availability">Disponibile in versione digitale</label> 
+                <label class="form-label fw-semibold" for="book-notes" >Note</label><br>
+                <textarea class="form-control mb-4" rows="3" id="book-notes" name="book-notes" name="message" placeholder="Inserisci qui eventuali note sulla pubblicazione"></textarea>
+                <input class="form-check-input mb-4" type="checkbox" id="digital-version-availability" name="digital-version-availability">
+                <label class="fw-semibold" for="digital-version-availability">Disponibile in versione digitale</label> 
                 <input class="d-block btn btn-primary" type="submit" value="Aggiungi">
             </div>
             
