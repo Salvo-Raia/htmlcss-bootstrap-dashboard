@@ -47,7 +47,7 @@
     </header>
 
     <main>
-        <form class="container">
+        <form class="container" action="https://learning.tizianonicolai.com/request-catcher/" method="post">
             
             <h1 class="fs-2 mt-4">Nuovo libro</h1>
 
@@ -55,17 +55,17 @@
             <div class="row row-cols-2 my-4">
                 <div>
                 <label class="form-label fw-semibold" for="author-first-name">Nome Autore</label>
-                <input class="form-control" type="text" id="author-first-name" name="author-first-name" placeholder="Inserisci nome">
+                <input class="form-control" type="text" id="author-first-name" name="author-first-name" placeholder="Inserisci nome" required>
                 </div>
                 <div>
                 <label class="form-label fw-semibold" for="author-last-name">Cognome Autore</label>
-                <input class="form-control" type="text" id="author-last-name" name="author-last-name" placeholder="Inserisci cognome">
+                <input class="form-control" type="text" id="author-last-name" name="author-last-name" placeholder="Inserisci cognome" required>
                 </div>
             </div>
 
             <div class="d-block mb-4">
                 <label class="form-label fw-semibold" for="book-title">Titolo dell'opera</label>
-                <input class="form-control" type="text" id="book-title" name="book-title" placeholder="Inserisci titolo">
+                <input class="form-control" type="text" id="book-title" name="book-title" placeholder="Inserisci titolo" required>
                 <span class="form-text">Titolo verisone italiana</span>
             </div>
 
@@ -73,8 +73,8 @@
             <div class="row mb-4 g-4">
                 <div class="col-lg-4"> 
                     <label class="form-label fw-semibold" for="book-genre">Genere</label>
-                    <select class="form-select fw-semibold" name="book-genre" id="book-genre">
-                        <option class="fw-semibold" selected>Scegli genere</option>
+                    <select class="form-select fw-semibold" name="book-genre" id="book-genre" required>
+                        <option value="" disabled selected class="fw-semibold">Scegli genere</option>
                         <option value="Avventura">Avventura</option>
                         <option value="Horror">Horror</option>
                         <option value="Romanzo storico">Romanzo storico</option>
@@ -84,11 +84,11 @@
                 </div>
                 <div class="col-lg-4">
                     <label class="form-label fw-semibold" for="book-release-year">Anno di pubblicazione</label>
-                    <input class="form-control" type="number" id="book-release-year" name="book-release-year" placeholder="Inserisci anno">
+                    <input class="form-control" type="number" id="book-release-year" name="book-release-year" placeholder="Inserisci anno" required>
                 </div>
                 <div class="col-lg-4">
                     <label class="form-label fw-semibold" for="book-isbn">#ISBN</label>
-                    <input class="form-control" type="text" id="book-isbn" name="book-isbn" placeholder="Inserisci codice">
+                    <input class="form-control" type="text" id="book-isbn" name="book-isbn" placeholder="Inserisci codice" required>
                 </div>
             </div>
 
