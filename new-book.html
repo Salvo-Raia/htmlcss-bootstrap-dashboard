@@ -50,6 +50,8 @@
         <form class="container">
             
             <h1 class="fs-2 mt-4">Nuovo libro</h1>
+
+            <!-- Info principali libro -->
             <div class="row row-cols-2 my-4">
                 <div>
                 <label class="form-label fw-semibold" for="author-first-name">Nome Autore</label>
@@ -67,6 +69,7 @@
                 <span class="form-text">Titolo verisone italiana</span>
             </div>
 
+            <!-- Dettagli libro -->
             <div class="row mb-4 g-4">
                 <div class="col-lg-4"> 
                     <label class="form-label fw-semibold" for="book-genre">Genere</label>
@@ -88,16 +91,17 @@
                     <input class="form-control" type="text" id="book-isbn" name="book-isbn" placeholder="Inserisci codice">
                 </div>
             </div>
+
             <hr>
+
+            <!-- Note eventuali \ Versione digitale -->
             <div>
                 <label class="form-label fw-semibold" for="book-notes" >Note</label><br>
                 <textarea class="form-control mb-4" rows="3" id="book-notes" name="book-notes" name="message" placeholder="Inserisci qui eventuali note sulla pubblicazione"></textarea>
                 <input class="form-check-input mb-4" type="checkbox" id="digital-version-availability" name="digital-version-availability">
-                <label class="fw-semibold" for="digital-version-availability">Disponibile in versione digitale</label> 
+                <label class="fw-semibold ps-1" for="digital-version-availability">Disponibile in versione digitale</label> 
                 <input class="d-block btn btn-primary" type="submit" value="Aggiungi">
             </div>
-            
-
         </form>
     </main>
     

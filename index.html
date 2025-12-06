@@ -48,22 +48,20 @@
     
     <main>
         <div class="container">
-            <!-- Inizio macro-griglia (catalogo + Todo\FAQ) -->
+            <!-- Griglia (Catalogo + Todo\FAQ) -->
            <div class="row mt-4">
+
             <!-- Colonna catalogo -->
-                
-                <div class="col-lg-9 mb-1">
-                    <!-- mini-griglia per header catalogo-->
-                    <header class="row row-cols-2 mb-4">
-                        <div>
-                            <h1 class="fs-2 m-0">Catalogo Libri</h1>
-                        </div>
-                        <div class="text-end">
-                            <a class="fs-6 btn btn-primary" href="./new-book.html">Aggiungi Libro</a>
-                        </div>
-                </header>
-                    
-                    <table class="table table-striped">
+                <div class="col-lg-9 mb-4">
+                    <header class="d-flex justify-content-between align-items-center mb-4">
+                            <h1 class="fs-2 mb-0">Catalogo Libri</h1>
+                            <a class="btn btn-primary" href="./new-book.html">Aggiungi Libro</a>
+                    </header>
+
+                    <!-- Elimino il nargin bottom della tabella (presente nelle regole della classe Bootstrap) e 
+                         inserisco direttamente mb-4 alla colonna, così in versione mobile mi ritrovo con spazi
+                         più armonici -->
+                    <table class="table table-striped mb-0"> 
                         <thead>
                             <tr>
                                 <th>Titolo</th>
@@ -181,9 +179,9 @@
                     </div>
                       <div class="card m-4">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex"><input type="checkbox" id="todo1" name="todo1"><label class="ps-2" for="todo1">Chiamare la segreteria</label></li>
-                            <li class="list-group-item d-flex"><input type="checkbox" id="todo2" name="todo2"><label class="ps-2" for="todo2">Inviare avvisi perstiti scaduti</label></li>
-                            <li class="list-group-item d-flex"><input type="checkbox" id="todo3" name="todo3"><label class="ps-2" for="todo3">Ordinare nuovi libri</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo1" name="todo1"><label class="ps-1" for="todo1">Chiamare la segreteria</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo2" name="todo2"><label class="ps-1" for="todo2">Inviare avvisi perstiti scaduti</label></li>
+                            <li class="list-group-item d-flex"><input type="checkbox" id="todo3" name="todo3"><label class="ps-1" for="todo3">Ordinare nuovi libri</label></li>
                         </ul>
                     </div>
                 </div>
@@ -225,16 +223,12 @@
                             </div>
                           </div>
                     </div>
-
-
                 </div>
             </div>
                 <!-- Fine griglia -->
-
-
-
         </div>
     </main>
+    
 <!-- Bootstrap script-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
